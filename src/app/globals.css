@@ -3,8 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #0a0a0a;
-  --secondary: #f6d36f;
+  --secondary: #fde047;
   --third: #fdb665;
+  --greyText: #b7c4ce;
+  --ourProducts: #fef9c3;
+  --ourServiceHeader: #dbeafe;
+  --sixth: #3b82f6;
+  --fourth: #fb7813;
+  --fifth:#f87865;
+  
 }
 
 @theme inline {
@@ -25,4 +32,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  @apply transition-all duration-[300ms] ease-in
+ 
 }

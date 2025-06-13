@@ -1,17 +1,17 @@
 import Image from "next/image"
 export default function Products(){
     return(
-        <div className="p-[2rem] flex flex-col justify-center items-center ">
+        <div className="p-[2rem] bg-[#e6e5e4] py-[8rem] gap-10 flex flex-col justify-center items-center ">
             <div className="text-center">
             <h1 className="font-bold text-[3rem]">Solar Energy Products</h1>
                 <p className="text-[2rem]">
                     Discover our comprehensive range of high-quality solar products designed to meet every energy need.
                 </p>
             </div>
-            <div className="flex gap-y-9 flex-wrap justify-center items-center" >
+            <div className="flex gap-12 flex-wrap justify-center items-center" >
                 {
                     ProductDetails.map((item,index)=>(
-                        <div key={index} className="w-[30%] gap-y-5" >
+                        <div key={index} className="w-[30%] border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col bg-white gap-y-3" >
                         <div>
                             <Image src={item.icon}alt="alt" width={100} height={100} />
                         </div>
@@ -21,7 +21,7 @@ export default function Products(){
                         <div>
                             {item.desc}
                         </div>
-                        <div className="text-[1.5rem] font-semibold">
+                        <div className="text-[1.5rem] text-[var(--secondary)] font-semibold">
                             {item.price}
                         </div>
                         <div>
@@ -33,7 +33,7 @@ export default function Products(){
                         </div>
 
                         <div className="justify-center items-center flex" >
-                            <button className="py-[0.5rem] rounded-[5px] text-center bg-red-800 w-[90%]">Get Quote</button>
+                            <button className="py-[0.5rem] rounded-[5px] text-center bg-[var(--secondary)] w-[90%] hover:bg-black hover:text-[var(--secondary)]">Get Quote</button>
                         </div>
                         </div>
                     ))

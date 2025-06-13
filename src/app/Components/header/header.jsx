@@ -1,23 +1,28 @@
 import Image from "next/image"
+import { TrendingUp, Check, Wallet } from "lucide-react";
+
+
 export default function Header(){
     return(
-        <div className="flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-red-400 pt-[5rem]">
-            <div className="bg-[var(--secondary)] rounded-[10px] px-[3rem]">Trusted by 10,000+ customers</div>
-            <div className="font-bold bg-green-800 text-[5rem] text-center">
+        <div className="flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-[#303844] pt-[5rem]">
+            <div className="bg-[var(--secondary)] rounded-[10px]  p-[0.2rem]"> ⭐⭐⭐⭐⭐ Trusted by 10,000+ customers</div>
+            <div className="font-bold text-[5rem] text-center text-[var(--background)]">
                 Power Your Future with <br></br> <span className="text-[var(--secondary)]">Clean Solar Energy</span>
             </div>
-            <div className="text-[1.5rem]" >connect tp reliable, stress-free solar energy solutions. Save money,<br></br> reduce your carbon footprint, and enjoy uninterrupted power supply.</div>
+            <div className="text-[1.5rem] text-[var(--greyText)]" >connect to reliable, stress-free solar energy solutions. Save money,<br></br> reduce your carbon footprint, and enjoy uninterrupted power supply.</div>
             <div className="py-[1rem]">
-                <button className=" bg-[var(--secondary)] p-[1rem] rounded-[3px]">Something should be here</button>
+                <button className="mb-[3rem] bg-[var(--secondary)] p-[1rem] rounded-[5px] font-bold hover:bg-black hover:text-[var(--secondary)] ">Something should be here</button>
             </div>
-            <div className="flex gap-16">
+            <div className="flex">
              {HeaderDetails.map((item,index)=>(
-                <div key={index} className="flex flex-col justify-center items-center gap-y-3 bg-green-700">
-                    <div> 
-                        <Image src={item.icon} alt="alt" width={40} height={40} />
+                <div key={index} className="flex flex-col justify-center items-center gap-y-3 ">
+                    <div className="bg-[var(--secondary)] p-[10px] rounded-[50%] "> 
+                        {index===0 ? (<TrendingUp className="w-8 font-extrabold h-8 text-black" />) : ""}
+                        {index===1 ? (<Check className="w-8 h-8 text-black font-extrabold" />) : ""}
+                        {index===2 ? (<Wallet className="w-8 h-8 text-black font-extrabold" />) : ""}
                     </div>
-                    <div>{item.title}</div>
-                    <div className="w-[70%]  text-center">
+                    <div className="font-extrabold text-[var(--background)]">{item.title}</div>
+                    <div className="w-[70%] text-[var(--greyText)] text-center">
                         {item.detail}
                     </div>
                 </div>

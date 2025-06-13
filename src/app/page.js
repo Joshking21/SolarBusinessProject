@@ -9,6 +9,8 @@ import Newsletter from "./Components/newsLetter/newsletter";
 import Partners from "./Components/partners/partners";
 import Footer from "./Components/footer/footer";
 import AboutUs from "./Components/aboutUs/aboutUs";
+import FAQ from "./Components/faq/faq";
+import Testimonial from "./Components/testimonial/testimonial";
 export default function Home() {
   return (
     <div>
@@ -20,8 +22,12 @@ export default function Home() {
       <Services />
       <ContactUs />
       <Newsletter/>
+      <FAQ/>
+      <Testimonial/>
       <Partners/>
       <Footer/>
+      
+      
     </div>
   );
 }

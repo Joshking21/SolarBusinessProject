@@ -1,18 +1,24 @@
 import Image from "next/image"
+import{ Zap, Shield, Wrench, BadgeNaira, Leaf, Clock } from "lucide-react"
 export default function Solar(){
     return(
-        <div className="flex pt-[2rem] bg-[#f5f5f5] gap-9 flex-col justify-center items-center ">
-        <div className="bg-yellow-300 text-center flex flex-col justify-center items-center">
+        <div className="flex py-[7rem] bg-[#faf4e8] gap-9 flex-col justify-center items-center ">
+        <div className=" text-center flex flex-col justify-center items-center">
         <h1 className="font-bold text-[3rem]">Why Our Solar Solutions?</h1>
-        <p className="w-[70%]">We provide comprehensive solar energy solutions designed to meet your specific needs and deliver maximum value.</p>
+        <p className="w-[70%] ">We provide comprehensive solar energy solutions designed to meet your specific needs and deliver maximum value.</p>
 
         </div>
         <div className="flex flex-wrap gap-6 gap-y-9  pl-[1rem] ">
             {
                 SolarDetails.map((item,index)=>(
-                    <div className="w-[30%] p-[1.5rem] rounded-[13px] bg[var(--primary)] border-[1px]" key={index}>
-                        <div className="py-[1rem] bg-[var(--secondary)">
-                            <Image src={item.icon} alt="alt" width={30} height={30} />
+                    <div className="w-[30%] p-[1.5rem] rounded-lg shadow-lg bg-[var(--background)]" key={index}>
+                        <div className="py-[1rem] bg-[var(--secondary)] p-[10px] rounded-[50%] w-fit">
+                                {index===0 ? (<Zap className="w-12 h-12  font-extrabold text-black" />) : ""}
+                        {index===1 ? (<Shield className="w-12 h-12 text-black font-extrabold" />) : ""}
+                        {index===2 ? (<Wrench className="w-12 h-12 text-black font-extrabold" />) : ""}
+                            {index===3 ? (<span className="text-black p-[1rem] font-extrabold text-4xl">₦</span>) : ""}
+                                                {index===4 ? (<Leaf className="w-12 h-12 text-black font-extrabold" />) : ""}
+                                                {index===5 ? (<Clock className="w-12 h-12 text-black font-extrabold" />) : ""}
                         </div>
                         <div className="font-bold py-[1rem]">
                             {item.title}
