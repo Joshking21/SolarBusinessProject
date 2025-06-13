@@ -1,8 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
+import MotionFadeInSection from "../framerMotion/motion"
 
 export default function Testimonial(){
     return(
+        <MotionFadeInSection>
+
         <div className="flex bg-[#e0dede] flex-col items-center justify-center text-center p-[3rem] py-[5rem] gap-y-5">
             <div>
                 <div className="font-bold flex flex-col gap-4  text-[2rem]">
@@ -36,6 +39,7 @@ export default function Testimonial(){
 
             </div>
         </div>
+        </MotionFadeInSection>
     )
 }
 

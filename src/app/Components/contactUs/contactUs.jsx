@@ -1,9 +1,12 @@
 import Message from "./sendMessage"
 import CallSection from "./callUs"
+import MotionFadeInSection from "../framerMotion/motion"
 
 export default function ContactUs(){
     return(
-        <div className="flex gap-7 py-[4rem] w-full mb-[6rem] flex-col h-full items-center" >
+        <MotionFadeInSection >
+
+        <div id="contactUs" className="flex gap-7 py-[4rem] w-full mb-[6rem] flex-col h-full items-center" >
           <div className=" flex gap-4 flex-col justify-center items-center w-full">  <div className="font-bold text-[2.3rem]">
                 Get In Touch
             </div>
@@ -22,6 +25,7 @@ export default function ContactUs(){
 
 
             </div>
+            </MotionFadeInSection>
        
     )
 }

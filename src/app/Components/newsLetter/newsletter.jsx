@@ -1,7 +1,9 @@
 import { TrendingUp,Lightbulb, Gift, Mail } from "lucide-react";
+import { MotionFadeLeftSection } from "../framerMotion/motion";
 import Image from "next/image"
 export default function Newsletter(){
     return(
+        <MotionFadeLeftSection>
         <div className="flex bg-gradient-to-br from-[var(--secondary)] to-[var(--fifth)] p-[8rem] justify-center items-center">
         <div className=" flex  " >
             <div className="w-1/2 flex flex-col justify-center items-center p-[1.5rem] bg-white rounded-lg">
@@ -61,6 +63,7 @@ export default function Newsletter(){
             </div>
         </div>
         </div>
+        </MotionFadeLeftSection>
     )
 }
 

@@ -2,6 +2,7 @@
 
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { MotionFadeRightSection } from "../framerMotion/motion";
 
 
 export default function FAQ(){
@@ -18,6 +19,7 @@ export default function FAQ(){
   };
 
     return(
+        <MotionFadeRightSection >
 
         <div className="flex flex-col items-center justify-center text-center p-[3rem] gap-y-5">
          <div>   <div className="font-bold flex flex-col gap-4  text-[2rem]">
@@ -56,6 +58,7 @@ export default function FAQ(){
 
             </div>
         </div>
+        </MotionFadeRightSection>
     )
 }
 

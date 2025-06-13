@@ -1,8 +1,10 @@
 import Image from "next/image"
 import{ Zap, Shield, Wrench, BadgeNaira, Leaf, Clock } from "lucide-react"
+import { MotionFadeLeftSection } from "../framerMotion/motion"
 export default function Solar(){
     return(
-        <div className="flex py-[7rem] bg-[#faf4e8] gap-9 flex-col justify-center items-center ">
+        <MotionFadeLeftSection>
+        <div id="solar" className="flex py-[7rem] bg-[#faf4e8] gap-9 flex-col justify-center items-center ">
         <div className=" text-center flex flex-col justify-center items-center">
         <h1 className="font-bold text-[3rem]">Why Our Solar Solutions?</h1>
         <p className="w-[70%] ">We provide comprehensive solar energy solutions designed to meet your specific needs and deliver maximum value.</p>
@@ -31,6 +33,7 @@ export default function Solar(){
             }
         </div>
         </div>
+        </MotionFadeLeftSection>
     )
 
 }

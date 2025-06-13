@@ -1,5 +1,8 @@
+import { MotionFadeRightSection } from "../framerMotion/motion"
+
 export default function Services() {
   return (
+    <MotionFadeRightSection>
     <div className="flex bg-[#f7f6fb] flex-col px-[1rem] justify-center gap-5 py-[7rem] items-center">
       <div className="text-center flex flex-col items-center">
         <h1 className="font-bold text-[3rem]">Professional Services</h1>
@@ -46,6 +49,7 @@ export default function Services() {
         </div>
       </div>
     </div>
+    </MotionFadeRightSection>
   );
 }
 

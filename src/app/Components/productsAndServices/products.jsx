@@ -1,7 +1,9 @@
 import Image from "next/image"
+import { MotionFadeLeftSection } from "../framerMotion/motion"
 export default function Products(){
     return(
-        <div className="p-[2rem] bg-[#e6e5e4] py-[8rem] gap-10 flex flex-col justify-center items-center ">
+        <MotionFadeLeftSection>
+        <div id="products" className="p-[2rem] bg-[#e6e5e4] py-[8rem] gap-10 flex flex-col justify-center items-center ">
             <div className="text-center">
             <h1 className="font-bold text-[3rem]">Solar Energy Products</h1>
                 <p className="text-[2rem]">
@@ -44,6 +46,7 @@ export default function Products(){
 
 
         </div>
+        </MotionFadeLeftSection>
     )
 }
 

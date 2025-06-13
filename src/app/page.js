@@ -11,9 +11,11 @@ import Footer from "./Components/footer/footer";
 import AboutUs from "./Components/aboutUs/aboutUs";
 import FAQ from "./Components/faq/faq";
 import Testimonial from "./Components/testimonial/testimonial";
+import LightbulbLoader from "./Components/lightbulbLoader/lightbulb";
 export default function Home() {
   return (
-    <div>
+    <LightbulbLoader>
+    <div className="overflow-hidden">
       <Nav />
       <Header />
       <Solar />
@@ -29,5 +31,6 @@ export default function Home() {
       
       
     </div>
+    </LightbulbLoader>
   );
 }

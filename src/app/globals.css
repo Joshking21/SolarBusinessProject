@@ -40,3 +40,6 @@ button{
 .hoverUp{
   @apply hover:-translate-y-[4px] duration-[300ms] ease-in
 }
+html{
+  scroll-behavior: smooth;
+}

@@ -1,7 +1,9 @@
 import Image from "next/image"
+import { MotionFadeRightSection } from "../framerMotion/motion"
 export default function AboutUs(){
     return(
-        <div className=" gap-6 flex flex-col py-[6rem] px-[3rem] justify-center items-center">
+        <MotionFadeRightSection>
+        <div id="aboutUs" className=" gap-6 flex flex-col py-[6rem] px-[3rem] justify-center items-center">
             <div className="font-bold text-[3rem]">About Us</div>
             <div className="flex ">
                 <div className="w-1/2 p-[1rem] border-r-[3px] border-r-[var(--secondary)] text-left text-[1.1rem]">
@@ -19,7 +21,7 @@ export default function AboutUs(){
 
         
         </div>
-
+</MotionFadeRightSection>
 
     )
 }

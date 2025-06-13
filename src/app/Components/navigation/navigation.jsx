@@ -1,12 +1,47 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { Sun } from 'lucide-react';
+import {useState, useEffect, useRef } from 'react';
 
 
 
 export default function Nav(){
+      const [ShowNav,setShowNav] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0)
+    const [isOpen,setIsOpen] = useState(false);
+    
+
+    useEffect(() =>{
+        const handleScroll = () =>{
+            const currentScrollY = window.scrollY;
+            if(currentScrollY > lastScrollY){
+                setShowNav(false);
+            } else{
+                setShowNav(true);
+            }
+           setLastScrollY(currentScrollY)
+        }
+
+        window.addEventListener('scroll',handleScroll);
+        return () => window.removeEventListener('scroll',handleScroll)
+    },[lastScrollY]);
+
+
+
+
+
+
+
+
+
+
+
     return(
-    <div className="flex justify-between bg-[var(--secondary)]">
+    <div className={`flex fixed top-0 w-full transition-transform duration-300 ease-in-out justify-between bg-[var(--secondary)] z-50 ${
+    ShowNav ? 'translate-y-0' : '-translate-y-full'
+  }`}>
         <div className="flex gap-2 p-[0.7rem]">
             <Sun className="w-8 h-8 text-blacktransition-colors" />
             <div className="items-center text-[1.5rem] font-bold flex">
@@ -36,16 +71,16 @@ export default function Nav(){
 
 const NavLinks = [
    { title: "Home",
-    link: ""},
+    link: "#header"},
 
     { title: "About Us",
-    link: ""},
+    link: "#aboutUs"},
 
     { title: "Solar?",
-    link: ""},
+    link: "#solar"},
 
     { title: "Product & Services",
-    link: ""},
+    link: "#products"},
     { title: "Contact Us",
-    link: "",},
+    link: "#contactUs",},
 ]

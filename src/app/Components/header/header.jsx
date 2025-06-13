@@ -1,10 +1,13 @@
 import Image from "next/image"
 import { TrendingUp, Check, Wallet } from "lucide-react";
+import MotionFadeInSection from "../framerMotion/motion";
 
 
 export default function Header(){
     return(
-        <div className="flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-[#303844] pt-[5rem]">
+        <MotionFadeInSection>
+        <div id="header" className="flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-[#303844] pt-[5rem]">
+            
             <div className="bg-[var(--secondary)] rounded-[10px]  p-[0.2rem]"> ⭐⭐⭐⭐⭐ Trusted by 10,000+ customers</div>
             <div className="font-bold text-[5rem] text-center text-[var(--background)]">
                 Power Your Future with <br></br> <span className="text-[var(--secondary)]">Clean Solar Energy</span>
@@ -29,7 +32,9 @@ export default function Header(){
              ))}
 
             </div>
+           
         </div>
+         </MotionFadeInSection>
     )
 }
 

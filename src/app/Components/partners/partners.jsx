@@ -1,6 +1,8 @@
 import Image from "next/image"
+import { MotionFadeLeftSection } from "../framerMotion/motion"
 export default function Partners(){
     return(
+        <MotionFadeLeftSection >
         <div className="flex bg-[#faf4e8] flex-col justify-center px-[2rem] py-[7rem] items-center ">
             <div className="font-bold text-[3rem]">
                 Trusted Partnerships
@@ -37,6 +39,7 @@ export default function Partners(){
                 </div>
             </div>
         </div>
+        </MotionFadeLeftSection>
     )
 }
 const PartnershipDetails=[
