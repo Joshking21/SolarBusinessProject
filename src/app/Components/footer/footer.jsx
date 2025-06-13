@@ -22,7 +22,7 @@ export default function Footer(){
                     <div className="gap-4  flex ">
                         {
                             FooterBottomDetails.map((items, index)=>(
-                                <div key={index} className="text-white/70">
+                                <div key={index} className="text-white/70 hover:text-[var(--secondary)]">
                                     {items}
                                 </div>
                             ))

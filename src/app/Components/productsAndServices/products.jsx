@@ -11,7 +11,7 @@ export default function Products(){
             <div className="flex gap-12 flex-wrap justify-center items-center" >
                 {
                     ProductDetails.map((item,index)=>(
-                        <div key={index} className="w-[30%] border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col bg-white gap-y-3" >
+                        <div key={index} className="w-[30%] border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col hoverUp bg-white gap-y-3" >
                         <div>
                             <Image src={item.icon}alt="alt" width={100} height={100} />
                         </div>

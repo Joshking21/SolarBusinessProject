@@ -4,7 +4,7 @@ export default function LinksFooter(){
             <div className="font-bold text-white text-[1.5rem]">Quick Links</div>
             <div className="flex flex-col gap-5">
             {QuickLinks.map((item,index)=>(
-                <div key={index}>
+                <div key={index} className="hover:text-[var(--secondary)]">
                     {item}
                 </div>
                

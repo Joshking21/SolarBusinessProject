@@ -11,7 +11,7 @@ export default function Solar(){
         <div className="flex flex-wrap gap-6 gap-y-9  pl-[1rem] ">
             {
                 SolarDetails.map((item,index)=>(
-                    <div className="w-[30%] p-[1.5rem] rounded-lg shadow-lg bg-[var(--background)]" key={index}>
+                    <div className="w-[30%] p-[1.5rem] rounded-lg hoverUp shadow-lg bg-[var(--background)]" key={index}>
                         <div className="py-[1rem] bg-[var(--secondary)] p-[10px] rounded-[50%] w-fit">
                                 {index===0 ? (<Zap className="w-12 h-12  font-extrabold text-black" />) : ""}
                         {index===1 ? (<Shield className="w-12 h-12 text-black font-extrabold" />) : ""}

@@ -1,6 +1,24 @@
+'use client'
+
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
+
+
 export default function FAQ(){
+
+    const [isOpen, setIsOpen] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null)
+
+      const toggle = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // close if already open
+    } else {
+      setOpenIndex(index); // open the clicked div, close others
+    }
+  };
+
     return(
+
         <div className="flex flex-col items-center justify-center text-center p-[3rem] gap-y-5">
          <div>   <div className="font-bold flex flex-col gap-4  text-[2rem]">
                 Common Questions About Solar Energy
@@ -10,19 +28,31 @@ export default function FAQ(){
             </div>
             </div>
             <div className="flex flex-col items-center justify-center w-full  gap-6">
-                {Questions.map((item,index)=>(
-                    <div className="flex w-[70%] flex-col border-[1px] border-[var(--greyText)] rounded-lg shadow-lg p-[9px]">
+                {Questions.map((item,index)=>{
+                     const isOpen = openIndex === index;
+              return(      <div data-index={index} key={index} onClick={(e) => {
+                        toggle(index)
+    } }className={`flex w-[70%] hoverUp flex-col border-[1px]  h-[4rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
+                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"h-4rem "}
+                   
+                     `}
+                    
+                    
+                    >
                         <div className="flex justify-between p-[1rem]">
                         <div className="font-bold"> {item.title}</div>
-                        <ChevronDown className="w-5 h-5 text-gray-600" />
+                        {isOpen ?(<ChevronUp className="w-5 h-5 text-[var(--secondary)]" />):(<ChevronDown className="w-5 h-5 text-gray-600" />)}
+
+
+                        
                         </div>
                         <div className="text-black/80 px-[1rem]">
                             {item.desc}
                         </div>
 
 
-                    </div>
-                ))}
+                    </div>)
+})}
 
             </div>
         </div>

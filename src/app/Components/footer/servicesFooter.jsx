@@ -5,7 +5,7 @@ export default function ServicesFooter(){
 
               <div className="flex flex-col gap-5">
             {ServicesFooterDetails.map((item,index)=>(
-                <div key={index}>
+                <div key={index} className="hover:text-[var(--secondary)]">
 
                     {item}
                 </div>

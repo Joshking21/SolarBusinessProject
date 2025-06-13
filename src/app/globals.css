@@ -37,3 +37,6 @@ button{
   @apply transition-all duration-[300ms] ease-in
  
 }
+.hoverUp{
+  @apply hover:-translate-y-[4px] duration-[300ms] ease-in
+}

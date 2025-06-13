@@ -12,7 +12,7 @@ export default function Services() {
       <div className="flex justify-cemter  gap-7 items-center flex-wrap p-[1rem]">
         {ServicesDetails.map((item, index) => (
           <div
-            className="w-[30%] border-[1px] border-[var(--greyText)] rounded-lg bg-white shadow-lg p-[1rem] border-l-[#3b82f6] border-l-[7px]"
+            className="w-[30%] border-[1px] border-[var(--greyText)] rounded-lg bg-white hoverUp shadow-lg p-[1rem] border-l-[#3b82f6] border-l-[7px]"
             key={index}
           >
             <div className="font-semibold py-[0.5rem]">{item.title}</div>
