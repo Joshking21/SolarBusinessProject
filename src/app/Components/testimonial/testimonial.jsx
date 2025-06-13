@@ -6,7 +6,7 @@ export default function Testimonial(){
     return(
         <MotionFadeInSection>
 
-        <div className="flex bg-[#e0dede] flex-col items-center justify-center text-center p-[3rem] py-[5rem] gap-y-5">
+        <div id="testimonial" className=" overflow-hidden flex bg-[#e0dede] flex-col items-center justify-center text-center px-[0.5rem] lg:px-[3rem] py-[5rem] gap-y-5">
             <div>
                 <div className="font-bold flex flex-col gap-4  text-[2rem]">
                     What Our Customers Say
@@ -16,15 +16,16 @@ export default function Testimonial(){
                 </div>
 
             </div>
-            <div className=" flex flex-wrap items-center justify-center w-full p-[1rem]  gap-6">
+            <div className=" flex flex-wrap lg:flex-row flex-col items-center justify-center w-full lg:p-[1rem]  lg:gap-6 gap-3">
                 {TestimonialDetails.map((item,index)=>(
-                    <div key={index} className="flex shadow-lg rounded-lg p-[1rem] gap-5 w-[40%] flex-col border-[1px] border-[var(--greyText)] bg-white">
+                    <div key={index} className="flex shadow-lg rounded-lg p-[1rem] gap-5 lg:w-[40%] flex-col border-[1px] border-[var(--greyText)] bg-white">
                         <div>
                             {item.desc}
                         </div>
                         <div className="flex justify-between">
                             <div>
-                                {item.name} <br></br> {item.address}
+                               <span className="font-bold"> {item.name}</span> <br></br> 
+                               <span className="text-green-600">{item.address}</span>
                             </div>
                             <div >
                                 <Image className="rounded-[50%]" src={item.photo} alt="alt" width={50} height={50} />

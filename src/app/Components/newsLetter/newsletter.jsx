@@ -4,10 +4,10 @@ import Image from "next/image"
 export default function Newsletter(){
     return(
         <MotionFadeLeftSection>
-        <div className="flex bg-gradient-to-br from-[var(--secondary)] to-[var(--fifth)] p-[8rem] justify-center items-center">
-        <div className=" flex  " >
-            <div className="w-1/2 flex flex-col justify-center items-center p-[1.5rem] bg-white rounded-lg">
-            <div className="w-[80%] flex flex-col gap-6">
+        <div className="overflow-hidden flex lg:flex-row flex-col bg-gradient-to-br from-[var(--secondary)] to-[var(--fifth)] lg:p-[8rem] p-[0.3rem] lg:py-[7rem] py-[2rem]  justify-center items-center">
+        <div className=" flex lg:flex-row flex-col-reverse p-[0.2rem] lg:p-0 " >
+            <div className="lg:w-1/2 flex flex-col justify-center items-center py-[1.5rem] rounded-t-none lg:p-[1.5rem] bg-white rounded-lg">
+            <div className="lg:w-[80%] w-[90%] flex flex-col gap-6">
                 <div className="w-full text-center text-[2rem] font-bold">
                     Stay Powered Up with Solar Insights
                 </div>
@@ -32,7 +32,7 @@ export default function Newsletter(){
                     }
 
                 </div>
-                <div className="flex gap-4">
+                <div className="flex lg:flex-row flex-col  gap-4">
                     <input type="email" placeholder="Enter your email address" className="border-[1px] border-[#fcedd1] p-[6px] rounded-lg"></input>
                     <button className="p-[6px] rounded-lg bg-[var(--secondary)] hover:bg-black hover:text-[var(--secondary)] ">Subscribe</button>
                 </div>
@@ -43,17 +43,17 @@ export default function Newsletter(){
 
 
 
-            <div className="flex  rounded-r-lg w-1/2 gap-5 flex-col justify-center items-center bg-gradient-to-br from-[var(--secondary)] to-[var(--fourth)]">
+            <div className="flex rounded-lg rounded-b-none lg:rounded-r-lg lg:w-1/2 gap-5 flex-col lg:py-0 py-[2rem] justify-center items-center bg-gradient-to-br from-[var(--secondary)] to-[var(--fourth)]">
              <div className="">
                 <Mail className="w-30  font-extrabold h-30 text-black" />
                 </div>
-                <div className="font-bold text-[2rem]">
+                <div className="font-bold text-center text-[2rem]">
                 Join Our Community
                 </div>
 
                 {
                     CommunityDetails.map((item,index)=>(
-                       <div key={index} className="bg-[#ffffff]/50 text-[1.3rem] w-1/2 py-[0.5rem] rounded-[7px] text-center">
+                       <div key={index} className="bg-[#ffffff]/50 text-[1.3rem] lg:w-1/2 w-[80%] py-[0.5rem] rounded-[7px] text-center">
                     <h1 className="font-semibold">{item.title}</h1>
                     <p>{item.desc}</p>
                 </div>

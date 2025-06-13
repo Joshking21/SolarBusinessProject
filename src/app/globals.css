@@ -21,12 +21,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -40,6 +40,9 @@ button{
 .hoverUp{
   @apply hover:-translate-y-[4px] duration-[300ms] ease-in
 }
-.html{
+html{
     scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none; 
 }

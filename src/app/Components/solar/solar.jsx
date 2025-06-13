@@ -4,16 +4,16 @@ import { MotionFadeLeftSection } from "../framerMotion/motion"
 export default function Solar(){
     return(
         <MotionFadeLeftSection>
-        <div id="solar" className="flex py-[7rem] bg-[#faf4e8] gap-9 flex-col justify-center items-center ">
+        <div id="solar" className="overflow-hidden flex py-[7rem] lg:px-0 px-[1rem] bg-[#faf4e8] gap-9 flex-col justify-center items-center ">
         <div className=" text-center flex flex-col justify-center items-center">
         <h1 className="font-bold text-[3rem]">Why Our Solar Solutions?</h1>
-        <p className="w-[70%] ">We provide comprehensive solar energy solutions designed to meet your specific needs and deliver maximum value.</p>
+        <p className="w-[80%] ">We provide comprehensive solar energy solutions designed to meet your specific needs and deliver maximum value.</p>
 
         </div>
-        <div className="flex flex-wrap gap-6 gap-y-9  pl-[1rem] ">
+        <div className="flex flex-wrap gap-6 gap-y-9  lg:pl-[1rem] ">
             {
                 SolarDetails.map((item,index)=>(
-                    <div className="w-[30%] p-[1.5rem] rounded-lg hoverUp shadow-lg bg-[var(--background)]" key={index}>
+                    <div className="lg:w-[30%] p-[1.5rem] rounded-lg hoverUp shadow-lg bg-[var(--background)]" key={index}>
                         <div className="py-[1rem] bg-[var(--secondary)] p-[10px] rounded-[50%] w-fit">
                                 {index===0 ? (<Zap className="w-12 h-12  font-extrabold text-black" />) : ""}
                         {index===1 ? (<Shield className="w-12 h-12 text-black font-extrabold" />) : ""}

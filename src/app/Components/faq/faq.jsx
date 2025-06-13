@@ -21,7 +21,7 @@ export default function FAQ(){
     return(
         <MotionFadeRightSection >
 
-        <div className="flex flex-col items-center justify-center text-center p-[3rem] gap-y-5">
+        <div id="faq" className="flex flex-col items-center justify-center text-center lg:p-[3rem] p-[1rem] lg:py-[5rem] py-[5rem] gap-y-5">
          <div>   <div className="font-bold flex flex-col gap-4  text-[2rem]">
                 Common Questions About Solar Energy
             </div>
@@ -34,8 +34,8 @@ export default function FAQ(){
                      const isOpen = openIndex === index;
               return(      <div data-index={index} key={index} onClick={(e) => {
                         toggle(index)
-    } }className={`flex w-[70%] hoverUp flex-col border-[1px]  h-[4rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
-                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"h-4rem "}
+    } }className={`flex lg:w-[70%] hoverUp flex-col border-[1px]  h-[4rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
+                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"lg:h-4rem h-[6rem] "}
                    
                      `}
                     

@@ -9,7 +9,7 @@ import {
 
 export default function GetInTouchFooter(){
     return(
-        <div className="w-[25%] text-white/70 flex flex-col gap-4">
+        <div className="lg:w-[25%] text-white/70 flex flex-col gap-4">
             <div className="flex flex-col gap-4">
             <div className="font-bold text-white text-[1.5rem]">Get In Touch</div>
          <div className="flex flex-col gap-4">  {
@@ -29,7 +29,7 @@ export default function GetInTouchFooter(){
             <div className="flex flex-col  gap-4">
                 <div className="font-bold text-white text-[1.5rem]">Newsletter</div>
                 <div>Get Solar tips and updates </div>
-                <div className="flex w-full gap-2">
+                <div className="flex lg:flex-row flex-col w-full gap-2">
                     <input className="border-white/70 border-[1px] p-[3px] rounded-lg" type="email" placeholder="Your email"></input>
                     <button className="py-[0.5rem] rounded-lg px-[1rem] bg-yellow-300">
                         Subscribe

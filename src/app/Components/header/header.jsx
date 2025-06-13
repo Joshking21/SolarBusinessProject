@@ -6,17 +6,17 @@ import MotionFadeInSection from "../framerMotion/motion";
 export default function Header(){
     return(
         <MotionFadeInSection>
-        <div id="header" className="flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-[#303844] pt-[5rem]">
+        <div id="header" className="overflow-hidden flex flex-col items-center justify-center p-[3rem] gap-y-3 bg-[#303844] lg:pt-[5rem] pt-[7rem] w-screen ">
             
-            <div className="bg-[var(--secondary)] rounded-[10px]  p-[0.2rem]"> ⭐⭐⭐⭐⭐ Trusted by 10,000+ customers</div>
-            <div className="font-bold text-[5rem] text-center text-[var(--background)]">
+            <div className="bg-[var(--secondary)] rounded-[10px]  p-[0.2rem] text-center"> ⭐⭐⭐⭐⭐ <br className="lg:hidden"></br> Trusted by 10,000+ customers</div>
+            <div className="font-bold lg:text-[5rem] text-[2rem] text-center text-[var(--background)]">
                 Power Your Future with <br></br> <span className="text-[var(--secondary)]">Clean Solar Energy</span>
             </div>
-            <div className="text-[1.5rem] text-[var(--greyText)]" >connect to reliable, stress-free solar energy solutions. Save money,<br></br> reduce your carbon footprint, and enjoy uninterrupted power supply.</div>
+            <div className="lg:text-[1.5rem] text-center lg:text-normal  text-[1rem] text-[var(--greyText)]" >connect to reliable, stress-free solar energy solutions. Save money,<br></br> reduce your carbon footprint, and enjoy uninterrupted power supply.</div>
             <div className="py-[1rem]">
-                <button className="mb-[3rem] bg-[var(--secondary)] p-[1rem] rounded-[5px] font-bold hover:bg-black hover:text-[var(--secondary)] ">Something should be here</button>
+                <button className="mb-[3rem] bg-[var(--secondary)] lg:p-[1rem] p-[0.5rem]  rounded-[5px] font-bold hover:bg-black hover:text-[var(--secondary)] ">Something should be here</button>
             </div>
-            <div className="flex">
+            <div className="flex lg:flex-row flex-col gap-6 lg:gap-0">
              {HeaderDetails.map((item,index)=>(
                 <div key={index} className="flex flex-col justify-center items-center gap-y-3 ">
                     <div className="bg-[var(--secondary)] p-[10px] rounded-[50%] "> 

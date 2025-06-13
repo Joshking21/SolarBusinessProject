@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function SolarFooter(){
     return(
-        <div className="w-[25%] text-white/70 flex flex-col gap-4 ">
+        <div className="lg:w-[25%] text-white/70 flex flex-col gap-4 ">
             <div className="font-bold text-white text-[1.5rem]">
                 <Sun className="w-10 inline font-extrabold h-10 text-[var(--secondary)]" />
 

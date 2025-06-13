@@ -37,7 +37,7 @@ export default function CallSection(){
                 </div>
             ))}
 
-            <div className="flex justify-center items-center h-[15rem] bg-yellow-600">
+            <div className="flex justify-center items-center h-[15rem] rounded-lg shadow-lg bg-yellow-600">
                 Maps Go in here
 
 

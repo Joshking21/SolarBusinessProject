@@ -5,9 +5,9 @@ import SolarFooter from "./solarTechFooter";
 
 export default function Footer(){
     return(
-        <div className="flex py-[2rem] px-[1rem] bg-[#111827] flex-col ">
+        <div className="overflow-hidden flex py-[2rem] px-[1rem] bg-[#111827] flex-col ">
 
-            <div className="flex pb-[2rem]">
+            <div className="flex lg:flex-row flex-col gap-6 pb-[2rem]">
             
                 <SolarFooter/>
                 <LinksFooter/>
@@ -15,8 +15,8 @@ export default function Footer(){
                 <GetInTouchFooter/>
                 </div>
 
-                <div className="flex py-[2rem] justify-between border-white/70 border-t-[1px] ">
-                    <div className="text-white/70">
+                <div className="flex py-[2rem] lg:flex-row flex-col  lg:justify-between gap-3 border-white/70 border-t-[1px] ">
+                    <div className="text-white/70 text-center">
                         2025 SolarTech Nigeria. All rights reserved
                     </div>
                     <div className="gap-4  flex ">

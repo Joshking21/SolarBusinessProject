@@ -1,19 +1,19 @@
 import Image from "next/image"
-import { MotionFadeLeftSection } from "../framerMotion/motion"
+import { MotionFadeRightSection } from "../framerMotion/motion"
 export default function Products(){
     return(
-        <MotionFadeLeftSection>
-        <div id="products" className="p-[2rem] bg-[#e6e5e4] py-[8rem] gap-10 flex flex-col justify-center items-center ">
+         <MotionFadeRightSection>
+        <div id="products" className="overflow-hidden flex lg:p-[2rem] p-[1rem] bg-[#e6e5e4] py-[8rem] gap-10  flex-col justify-center items-center ">
             <div className="text-center">
             <h1 className="font-bold text-[3rem]">Solar Energy Products</h1>
-                <p className="text-[2rem]">
+                <p className="lg:text-[2rem]">
                     Discover our comprehensive range of high-quality solar products designed to meet every energy need.
                 </p>
             </div>
-            <div className="flex gap-12 flex-wrap justify-center items-center" >
+            <div className="flex lg:flex-row flex-col gap-12 flex-wrap justify-center items-center" >
                 {
                     ProductDetails.map((item,index)=>(
-                        <div key={index} className="w-[30%] border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col hoverUp bg-white gap-y-3" >
+                        <div key={index} className="lg:w-[30%]  border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col hoverUp bg-white gap-y-3" >
                         <div>
                             <Image src={item.icon}alt="alt" width={100} height={100} />
                         </div>
@@ -46,7 +46,7 @@ export default function Products(){
 
 
         </div>
-        </MotionFadeLeftSection>
+         </MotionFadeRightSection>
     )
 }
 
