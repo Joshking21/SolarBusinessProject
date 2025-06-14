@@ -15,7 +15,7 @@ export default function Services() {
       <div className="flex justify-cemter  gap-7 items-center flex-wrap lg:p-[1rem] p-[0.5rem]">
         {ServicesDetails.map((item, index) => (
           <div
-            className="lg:w-[30%] border-[1px] border-[var(--greyText)] rounded-lg bg-white hoverUp shadow-lg p-[0.5rem] lg:p-[1rem] border-l-[#3b82f6] border-l-[7px]"
+            className="lg:w-[30%] md:w-[40%] border-[1px] border-[var(--greyText)] rounded-lg bg-white hoverUp shadow-lg p-[0.5rem] lg:p-[1rem] border-l-[#3b82f6] border-l-[7px]"
             key={index}
           >
             <div className="font-semibold py-[0.5rem]">{item.title}</div>
@@ -37,7 +37,7 @@ export default function Services() {
           Get a free consultation and personalized quote for your solar energy
           needs. Our experts are ready to help you save money and go green.
         </div>
-        <div className="gap-7 flex lg:flex-row flex-col ">
+        <div className="gap-7 flex md:flex-row lg:flex-row flex-col ">
           {buttonDetails.map((item, index) => (
             <button
               key={index}

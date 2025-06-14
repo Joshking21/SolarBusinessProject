@@ -10,10 +10,10 @@ export default function Products(){
                     Discover our comprehensive range of high-quality solar products designed to meet every energy need.
                 </p>
             </div>
-            <div className="flex lg:flex-row flex-col gap-12 flex-wrap justify-center items-center" >
+            <div className="flex lg:flex-row  md:flex-row flex-col gap-12 flex-wrap justify-center items-center" >
                 {
                     ProductDetails.map((item,index)=>(
-                        <div key={index} className="lg:w-[30%]  border-[var(--greyText)] border-[1px]  shadow-lg rounded-lg p-[1rem] flex flex-col hoverUp bg-white gap-y-3" >
+                        <div key={index} className="lg:w-[30%] md:w-[40%]  border-[var(--greyText)] border-[1px] md:p-[0.5rem]  shadow-lg rounded-lg p-[1rem] flex flex-col hoverUp bg-white gap-y-3" >
                         <div>
                             <Image src={item.icon}alt="alt" width={100} height={100} />
                         </div>
@@ -55,7 +55,7 @@ const ProductDetails =[
     {
         icon:"/file.svg",
         title:"Residential Solar Systems",
-        desc:"Complete home solar solutions designed for maximum efficiency and savings",
+        desc:"Complete home solar solutions designed for maximum efficiency ",
         price:"From ₦2,500,000",
         features:[
             "3kW - 15kW Systems",

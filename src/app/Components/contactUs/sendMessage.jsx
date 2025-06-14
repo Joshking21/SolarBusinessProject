@@ -13,7 +13,7 @@ export default function Message(){
                     </div>
 
 
-                    <div className="flex gap-6 flex-wrap ">
+                    <div className="flex gap-6 w-full flex-wrap ">
                           
 
                             
@@ -35,11 +35,11 @@ export default function Message(){
                                    <option className="hover:bg-gray-600" value={item} key={index} > {item} </option>
                                    ))}
                                    </select>
-                                   </div>): (<div key={index} className="flex flex-col gap-4">
+                                   </div>): (<div key={index} className="flex flex-col gap-4 w-full md:w-auto lg:w-auto">
                                     <div className="font-semibold">
                                         {item.title}
                                     </div>
-                                    <input  className="border-[1px] focus:border-[#706f6b] outline-none border-[#fcedd1] rounded-lg p-[4px]" type={item.type} placeholder={item.placeholder}></input>
+                                    <input  className="border-[1px] focus:border-[#706f6b] outline-none border-[#fcedd1]  rounded-lg p-[4px]" type={item.type} placeholder={item.placeholder}></input>
                                 </div>)
   
   

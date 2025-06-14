@@ -35,14 +35,14 @@ export default function FAQ(){
               return(      <div data-index={index} key={index} onClick={(e) => {
                         toggle(index)
     } }className={`flex lg:w-[70%] hoverUp flex-col border-[1px]  h-[4rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
-                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"lg:h-4rem h-[6rem] "}
+                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"lg:h-4rem h-[5rem] "}
                    
                      `}
                     
                     
                     >
                         <div className="flex justify-between p-[1rem]">
-                        <div className="font-bold"> {item.title}</div>
+                        <div className="font-bold pb-[8px] lg:pb-0"> {item.title}</div>
                         {isOpen ?(<ChevronUp className="w-5 h-5 text-[var(--secondary)]" />):(<ChevronDown className="w-5 h-5 text-gray-600" />)}
 
 

@@ -10,8 +10,9 @@ import {
 export default function CallSection(){
     return(
         <div className="gap-5  flex flex-col">
+            <div className="md:flex md:gap-3 md:items-center md:justify-center md:g-red-800 md:flex-wrap">
             {CallSectionDetails.map((item,index)=>(
-                <div className="flex p-[1.5rem] gap-5 border-[1px] border-[var(--greyText)] rounded-lg shadow-lg" key={index}>
+                <div className="flex p-[1.5rem] md:w-[40%] gap-5 border-[1px] border-[var(--greyText)] rounded-lg shadow-lg" key={index}>
                     <div className="bg-[var(--secondary)] w-15 h-15  flex items-center justify-center rounded-[50%] ">   {index===0 ? (<Phone className="w-8 font-extrabold h-8 text-black" />) : ""}
                      {index===1 ? (<Mail className="w-8 font-extrabold h-8 text-black" />) : ""}
                      {index===2 ? (<MapPin className="w-8 font-extrabold h-8 text-black" />) : ""}
@@ -36,6 +37,7 @@ export default function CallSection(){
                     </div>
                 </div>
             ))}
+            </div>
 
             <div className="flex justify-center items-center h-[15rem] rounded-lg shadow-lg bg-yellow-600">
                 Maps Go in here
