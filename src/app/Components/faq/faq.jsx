@@ -34,8 +34,8 @@ export default function FAQ(){
                      const isOpen = openIndex === index;
               return(      <div data-index={index} key={index} onClick={(e) => {
                         toggle(index)
-    } }className={`flex lg:w-[70%] hoverUp flex-col border-[1px]  h-[4rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
-                     ${isOpen   ?"h-auto border-l-[5px] border-l-[var(--secondary)]  ":"lg:h-4rem h-[5rem] "}
+    } }className={`flex lg:w-[70%] hoverUp flex-col border-[1px]  h-[4rem] lg:h-[3.5rem] overflow-hidden border-[var(--greyText)] border-l-none rounded-lg shadow-lg p-[9px] transition-all duration-300
+                     ${isOpen   ?"h-auto lg:h-auto border-l-[5px] border-l-[var(--secondary)]  ":"lg:h-[4rem] h-[5rem] "}
                    
                      `}
                     

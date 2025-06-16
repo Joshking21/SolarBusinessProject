@@ -9,7 +9,7 @@ import {
 
 export default function GetInTouchFooter(){
     return(
-        <div className="lg:w-[25%] text-white/70 flex flex-col gap-4">
+        <div className="lg:w-[20%]  text-white/70 flex flex-col gap-4">
             <div className="flex flex-col gap-4">
             <div className="font-bold text-white text-[1.5rem]">Get In Touch</div>
          <div className="flex flex-col gap-4">  {
