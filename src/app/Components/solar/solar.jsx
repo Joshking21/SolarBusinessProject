@@ -32,19 +32,19 @@ export default function Solar() {
                 ) : (
                   ""
                 )}
-                {index === 2 ? (
+                {index === 4 ? (
                   <Wrench className="w-12 h-12 text-black font-extrabold" />
                 ) : (
                   ""
                 )}
-                {index === 3 ? (
+                {index === 2 ? (
                   <span className="text-black p-[1rem] font-extrabold text-4xl">
                     ₦
                   </span>
                 ) : (
                   ""
                 )}
-                {index === 4 ? (
+                {index === 3 ? (
                   <Leaf className="w-12 h-12 text-black font-extrabold" />
                 ) : (
                   ""

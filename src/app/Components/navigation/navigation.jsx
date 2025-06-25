@@ -45,7 +45,7 @@ export default function Nav(){
         <div className="flex gap-2 p-[0.7rem] items-center justify-center">
             <Sun className="w-10 h-10 lg:w-8 lg:h-8 text-blacktransition-colors" />
             <Link href="#header" className="items-center lg:text-[1.5rem] text-[2rem] font-bold flex">
-                SolarTech
+                Hertz RE
             </Link>
 
         </div>
