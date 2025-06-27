@@ -12,7 +12,7 @@ export default function TawkTo() {
 
       const s0 = document.getElementsByTagName('script')[0];
       s0.parentNode.insertBefore(s1, s0);
-    }, 5000); // Delay for 5 seconds
+    }, 2000); // Delay for 5 seconds
 
     return () => clearTimeout(timeout); // Clean up if component unmounts
   }, []);

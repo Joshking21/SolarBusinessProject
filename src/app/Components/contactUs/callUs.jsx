@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Phone, Mail, Send, MapPin, Clock, AlertTriangle } from "lucide-react";
 export default function CallSection() {
   return (
-    <div className="gap-5  flex flex-col">
+    <div id="call" className="gap-5  flex flex-col">
       <div className="md:flex  flex flex-col md:gap-3 md:items-center md:justify-center  md:g-red-800 md:flex-wrap">
         {CallSectionDetails.map((item, index) => (
           <div
